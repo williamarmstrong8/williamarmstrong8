@@ -14,7 +14,7 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝
 ```
 
-<p align="center"><sub><code>a story in chapters</code> &nbsp;·&nbsp; press play by scrolling</sub></p>
+<p align="center"><sub><code>a story in chapters</code> &nbsp;·&nbsp; now playing</sub></p>
 
 <br/>
 
