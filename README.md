@@ -1,24 +1,29 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-  <img src="./assets/hero-light.svg" width="100%" alt="Build the idea. Ship the product. — William Armstrong" />
-</picture>
+<img src="./assets/terminal.svg" width="100%" alt="ARMSTRONG-OS terminal: William Armstrong, solutions engineer at Vercel and founder in San Francisco, booting his agent fleet JARVIS, ALFRED, TARS and HEARTHBOARD" />
 
-<a href="https://www.linkedin.com/in/william-armstrong8/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/btn-linkedin-dark.svg" /><img src="./assets/btn-linkedin-light.svg" height="48" alt="Connect on LinkedIn" /></picture></a>&nbsp;&nbsp;<a href="https://github.com/williamarmstrong8?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/btn-github-dark.svg" /><img src="./assets/btn-github-light.svg" height="48" alt="View GitHub" /></picture></a>
+<br/>
 
-<br/><br/><br/>
+<img src="./assets/shipped.svg" width="100%" alt="Shipped: Cue, Hearthboard, JARVIS, Club Pack, Happy Mile Run Club, Mod Brew" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/features-dark.svg" />
-  <img src="./assets/features-light.svg" width="100%" alt="A unified approach for 0 to shipped: Idea, Design, Build, AI, Ship, Scale" />
-</picture>
+<sub>
+<a href="https://github.com/williamarmstrong8/cue">cue</a> ·
+<a href="https://github.com/williamarmstrong8/hearthboard">hearthboard</a> ·
+<a href="https://github.com/williamarmstrong8/jarvis-personal-home-agent">jarvis</a> ·
+<a href="https://williamarmstrong.vercel.app/startups/club-pack">club pack</a> ·
+<a href="https://williamarmstrong.vercel.app/startups/happy-mile">happy mile</a> ·
+<a href="https://williamarmstrong.vercel.app/startups/mod-brew">mod brew</a>
+</sub>
 
-<br/><br/><br/>
+<br/><br/>
 
-<a href="https://www.linkedin.com/in/william-armstrong8/"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/cta-dark.svg" />
-  <img src="./assets/cta-light.svg" width="100%" alt="Building something? Reach me on LinkedIn." />
-</picture></a>
+<img src="./assets/signoff.svg" width="100%" alt="Off-screen: running with Happy Mile, shooting photos, rebooting JARVIS." />
+
+<br/>
+
+<code><a href="https://williamarmstrong.vercel.app/">portfolio</a></code>&nbsp;
+<code><a href="https://www.linkedin.com/in/william-armstrong8/">linkedin</a></code>&nbsp;
+<code><a href="https://x.com/armstrongwill8">x</a></code>&nbsp;
+<code><a href="https://williamarmstrong.vercel.app/photography">photography</a></code>
 
 </div>

@@ -1,164 +1,214 @@
 #!/usr/bin/env python3
-"""Generate light and dark README SVGs. Run: python3 scripts/build.py"""
+"""Generate the README SVGs (amber CRT terminal theme). Run: python3 scripts/build.py"""
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 OUT = Path(__file__).resolve().parent.parent / "assets"
 OUT.mkdir(exist_ok=True)
+for old in OUT.glob("*.svg"):
+    old.unlink()
 
-FONT = "Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
-MONO = "'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-
-THEMES = {
-    "dark": dict(bg="#000000", fg="#EDEDED", muted="#A1A1A1", subtle="#1F1F1F", line="#2E2E2E", btn_bg="#EDEDED", btn_fg="#0A0A0A"),
-    "light": dict(bg="#FFFFFF", fg="#171717", muted="#666666", subtle="#F2F2F2", line="#EBEBEB", btn_bg="#171717", btn_fg="#FFFFFF"),
-}
-
+MONO = "'JetBrains Mono', 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
+BG, PANEL, AMBER, DIM, FAINT, GREEN = "#0E0B07", "#15110A", "#FFB547", "#B9843A", "#5C4423", "#7CFFB2"
 W = 1200
 
-
-def grid(t, h, step=60):
-    lines = [f'<path d="M{x} 0V{h}" />' for x in range(0, W + 1, step)]
-    lines += [f'<path d="M0 {y}H{W}" />' for y in range(0, h + 1, step)]
-    return f'<g stroke="{t["line"]}" stroke-width="1" opacity=".55">{"".join(lines)}</g>'
-
-
-def hero(t):
-    h = 480
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}">
-  <defs>
-    <radialGradient id="fade" cx="50%" cy="45%" r="60%">
-      <stop offset="0%" stop-color="{t["bg"]}" stop-opacity="0"/>
-      <stop offset="100%" stop-color="{t["bg"]}" stop-opacity="1"/>
+DEFS = f'''<defs>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigglow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity=".28"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".65"/>
     </radialGradient>
-    <linearGradient id="beam" x1="0" x2="1">
-      <stop offset="0%" stop-color="{t["fg"]}" stop-opacity="0"/>
-      <stop offset="50%" stop-color="{t["fg"]}" stop-opacity=".9"/>
-      <stop offset="100%" stop-color="{t["fg"]}" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="vbeam" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="{t["fg"]}" stop-opacity="0"/>
-      <stop offset="50%" stop-color="{t["fg"]}" stop-opacity=".9"/>
-      <stop offset="100%" stop-color="{t["fg"]}" stop-opacity="0"/>
-    </linearGradient>
-    <style>
-    </style>
-  </defs>
-  <rect width="{W}" height="{h}" fill="{t["bg"]}"/>
-  {grid(t, h)}
-  <rect width="{W}" height="{h}" fill="url(#fade)"/>
-
-  <!-- light travelling along the grid -->
-  <rect y="119.5" width="180" height="1.5" fill="url(#beam)">
-    <animate attributeName="x" values="-180;{W}" dur="6s" repeatCount="indefinite"/>
-  </rect>
-  <rect y="359.5" width="180" height="1.5" fill="url(#beam)">
-    <animate attributeName="x" values="{W};-180" dur="7s" begin="1.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="179.5" width="1.5" height="140" fill="url(#vbeam)">
-    <animate attributeName="y" values="-140;{h}" dur="5s" begin="1s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="1019.5" width="1.5" height="140" fill="url(#vbeam)">
-    <animate attributeName="y" values="{h};-140" dur="5.5s" begin="2.5s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- grid-intersection crosses -->
-  <g stroke="{t["muted"]}" stroke-width="1">
-    <path d="M174 120h12M180 114v12"/><path d="M1014 360h12M1020 354v12"/>
-  </g>
-
-  <g text-anchor="middle">
-    <g class="in d1">
-      <rect x="490" y="104" width="220" height="32" rx="16" fill="{t["bg"]}" stroke="{t["line"]}"/>
-      <circle cx="514" cy="120" r="4" fill="#45DEC4"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
-      <text x="610" y="125" font-family="{MONO}" font-size="13" fill="{t["muted"]}">williamarmstrong8</text>
-    </g>
-    <g class="in d2" font-family="{FONT}" font-weight="600" fill="{t["fg"]}" letter-spacing="-3.2">
-      <text x="600" y="222" font-size="68">Build the idea.</text>
-      <text x="600" y="300" font-size="68">Ship the product.</text>
-    </g>
-    <g class="in d3" font-family="{FONT}" font-size="20" fill="{t["muted"]}">
-      <text x="600" y="358">William Armstrong — builder and engineer, from idea to shipped.</text>
-    </g>
-  </g>
-</svg>
-'''
+  </defs>'''
 
 
-def button(t, label, primary, width):
-    h = 48
-    bg = t["btn_bg"] if primary else t["bg"]
-    fg = t["btn_fg"] if primary else t["fg"]
-    stroke = "none" if primary else t["line"]
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{h}" viewBox="0 0 {width} {h}">
-  <rect x=".5" y=".5" width="{width-1}" height="{h-1}" rx="24" fill="{bg}" stroke="{stroke}"/>
-  <text x="{width/2}" y="30" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="500" fill="{fg}">{label}</text>
-</svg>
-'''
+def crt_overlay(h):
+    return f'''<rect width="{W}" height="{h}" fill="url(#scan)" pointer-events="none"/>
+  <rect width="{W}" height="{h}" fill="url(#vignette)" pointer-events="none"/>
+  <rect y="-80" width="{W}" height="80" fill="{AMBER}" opacity=".035">
+    <animate attributeName="y" values="-80;{h}" dur="7s" repeatCount="indefinite"/>
+  </rect>'''
 
 
-FEATURES = [
-    ("01", "Idea", "Start with the problem.", "Find the sharpest version", "worth building."),
-    ("02", "Design", "Interfaces that feel obvious.", "Clear hierarchy, nothing", "extra."),
-    ("03", "Build", "Full stack, end to end.", "Frontend, backend, data,", "and everything between."),
-    ("04", "AI", "Products with intelligence.", "Models and agents wired into", "real workflows."),
-    ("05", "Ship", "Zero to production, fast.", "Small releases, short loops,", "real users early."),
-    ("06", "Scale", "Grow without rewrites.", "Foundations that hold up", "from MVP onward."),
+# ---------------------------------------------------------------- hero terminal
+CYCLE = 18.0  # seconds for one full boot loop
+
+LINES = [
+    # (kind, text) kinds: cmd = typed prompt, out = printed, ok = boot line, gap
+    ("cmd", "whoami"),
+    ("out", "william armstrong · solutions engineer @ vercel · founder · san francisco"),
+    ("gap", ""),
+    ("cmd", "./boot --fleet"),
+    ("ok", ("JARVIS", "personal home agent", "online")),
+    ("ok", ("ALFRED", "chat + task bot", "online")),
+    ("ok", ("TARS", "humor setting 75%", "online")),
+    ("ok", ("HEARTHBOARD", "raspberry pi homelab, ipad cmd center", "online")),
+    ("gap", ""),
+    ("cmd", "cat ~/receipts.txt"),
+    ("out", "4 startups launched  ·  $50k workflow automated  ·  2M+ community engagement"),
 ]
 
 
-def features(t):
-    cols, cw, ch, top = 3, 400, 200, 140
-    h = top + ch * 2 + 1
-    cells = []
-    for i, (num, title, lead, l1, l2) in enumerate(FEATURES):
-        x, y = (i % cols) * cw, top + (i // cols) * ch
-        delay = 0.1 + i * 0.12
-        cells.append(f'''
-  <g class="cell" style="animation-delay:{delay:.2f}s">
-    <text x="{x+32}" y="{y+48}" font-family="{MONO}" font-size="13" fill="{t["muted"]}">{num}</text>
-    <text x="{x+32}" y="{y+92}" font-family="{FONT}" font-size="22" font-weight="600" letter-spacing="-.6" fill="{t["fg"]}">{title}</text>
-    <text x="{x+32}" y="{y+124}" font-family="{FONT}" font-size="16" fill="{t["fg"]}">{lead}</text>
-    <text x="{x+32}" y="{y+150}" font-family="{FONT}" font-size="16" fill="{t["muted"]}">{l1}</text>
-    <text x="{x+32}" y="{y+172}" font-family="{FONT}" font-size="16" fill="{t["muted"]}">{l2}</text>
-  </g>''')
-    g = t["line"]
+def hero():
+    top, lh, x0 = 268, 30, 64
+    h = top + lh * (len(LINES) + 1) + 70
+    css, body = [], []
+    t = 0.6
+    for i, (kind, text) in enumerate(LINES):
+        y = top + i * lh
+        if kind == "gap":
+            t += 0.3
+            continue
+        start = t / CYCLE * 100
+        cls = f"l{i}"
+        if kind == "cmd":
+            dur = 0.07 * len(text) + 0.2
+            end = (t + dur) / CYCLE * 100
+            chars = len(text)
+            # typed reveal: clip width grows in character steps
+            css.append(
+                f".{cls} {{ animation: k{i} {CYCLE}s steps(1) infinite; }}"
+                f"@keyframes k{i} {{ 0%,{start:.2f}% {{ opacity:0 }} {start+0.01:.2f}%,94% {{ opacity:1 }} 96%,100% {{ opacity:0 }} }}"
+                f".c{i} {{ animation: w{i} {CYCLE}s linear infinite; }}"
+                f"@keyframes w{i} {{ 0%,{start:.2f}% {{ width:0 }} {end:.2f}%,100% {{ width:{chars*10.9+4:.0f}px }} }}"
+            )
+            body.append(
+                f'<clipPath id="cp{i}"><rect class="c{i}" x="{x0+164}" y="{y-20}" height="28" width="0"/></clipPath>'
+                f'<g class="{cls}"><text x="{x0}" y="{y}" fill="{GREEN}">william@sf</text>'
+                f'<text x="{x0+118}" y="{y}" fill="{DIM}">~</text><text x="{x0+140}" y="{y}" fill="{AMBER}">$</text>'
+                f'<text x="{x0+164}" y="{y}" fill="{AMBER}" clip-path="url(#cp{i})">{escape(text)}</text></g>'
+            )
+            t += dur + 0.35
+        else:
+            css.append(
+                f".{cls} {{ animation: k{i} {CYCLE}s steps(1) infinite; }}"
+                f"@keyframes k{i} {{ 0%,{start:.2f}% {{ opacity:0 }} {start+0.01:.2f}%,94% {{ opacity:1 }} 96%,100% {{ opacity:0 }} }}"
+            )
+            if kind == "ok":
+                name, desc, status = text
+                dots = "." * max(3, 44 - len(name) - len(desc))
+                body.append(
+                    f'<g class="{cls}"><text x="{x0}" y="{y}" fill="{DIM}">[ <tspan fill="{GREEN}">ok</tspan> ]</text>'
+                    f'<text x="{x0+110}" y="{y}" fill="{AMBER}" font-weight="700">{name}</text>'
+                    f'<text x="{x0+280}" y="{y}" fill="{DIM}">{escape(desc)} <tspan fill="{FAINT}">{dots}</tspan> <tspan fill="{GREEN}">{status}</tspan></text></g>'
+                )
+                t += 0.45
+            else:
+                body.append(f'<g class="{cls}"><text x="{x0}" y="{y}" fill="{AMBER}">{escape(text)}</text></g>')
+                t += 0.5
+    # final prompt + blinking block cursor
+    y = top + len(LINES) * lh
+    start = t / CYCLE * 100
+    css.append(
+        f".lend {{ animation: kend {CYCLE}s steps(1) infinite; }}"
+        f"@keyframes kend {{ 0%,{start:.2f}% {{ opacity:0 }} {start+0.01:.2f}%,94% {{ opacity:1 }} 96%,100% {{ opacity:0 }} }}"
+        ".blink { animation: blink 1s steps(1) infinite; } @keyframes blink { 50% { opacity: 0 } }"
+    )
+    body.append(
+        f'<g class="lend"><text x="{x0}" y="{y}" fill="{GREEN}">william@sf</text>'
+        f'<text x="{x0+118}" y="{y}" fill="{DIM}">~</text><text x="{x0+140}" y="{y}" fill="{AMBER}">$</text>'
+        f'<rect class="blink" x="{x0+164}" y="{y-19}" width="11" height="24" fill="{AMBER}"/></g>'
+    )
+
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}">
+  {DEFS}
   <style>
+    text {{ font-family: {MONO}; white-space: pre; }}
+    .flicker {{ animation: flicker 5s infinite; }}
+    @keyframes flicker {{ 0%,100% {{ opacity: 1 }} 47% {{ opacity: 1 }} 48% {{ opacity: .82 }} 49% {{ opacity: 1 }} 72% {{ opacity: .93 }} 73% {{ opacity: 1 }} }}
+    @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; opacity: 1 !important; }} }}
+    {"".join(css)}
   </style>
-  <rect width="{W}" height="{h}" fill="{t["bg"]}"/>
-  <text x="0" y="56" font-family="{FONT}" font-size="40" font-weight="600" letter-spacing="-2" fill="{t["fg"]}">A unified approach for 0 → shipped</text>
-  <text x="0" y="96" font-family="{FONT}" font-size="18" fill="{t["muted"]}">One person across the whole loop, so nothing gets lost in handoff.</text>
-  <g fill="none" stroke="{g}">
-    <rect x=".5" y="{top+.5}" width="{W-1}" height="{ch*2}"/>
-    <path d="M400 {top}V{h}M800 {top}V{h}M0 {top+ch+.5}H{W}"/>
+  <rect width="{W}" height="{h}" rx="18" fill="{BG}"/>
+  <!-- window chrome -->
+  <rect width="{W}" height="44" rx="18" fill="{PANEL}"/><rect y="26" width="{W}" height="18" fill="{PANEL}"/>
+  <circle cx="30" cy="22" r="6" fill="{FAINT}"/><circle cx="52" cy="22" r="6" fill="{FAINT}"/><circle cx="74" cy="22" r="6" fill="{FAINT}"/>
+  <text x="{W/2}" y="28" text-anchor="middle" font-size="14" fill="{DIM}">william@sf: ~ — tty1 — 37.77°N 122.42°W</text>
+
+  <g class="flicker" filter="url(#glow)" font-size="18">
+    <text x="64" y="104" font-size="14" fill="{FAINT}">ARMSTRONG-OS v8.0  ·  engineer &amp; entrepreneur</text>
+    <g filter="url(#bigglow)">
+      <text x="60" y="190" font-size="84" font-weight="800" letter-spacing="-2" fill="{AMBER}">WILLIAM ARMSTRONG</text>
+    </g>
+    <rect x="64" y="216" width="{W-128}" height="1" fill="{FAINT}"/>
+    {"".join(body)}
   </g>
-  <rect x="0" y="{top}" width="120" height="1.5" fill="{t["fg"]}" opacity=".8">
-    <animate attributeName="x" values="-120;{W}" dur="5s" repeatCount="indefinite"/>
-  </rect>
-  {"".join(cells)}
+  {crt_overlay(h)}
 </svg>
 '''
 
 
-def cta(t):
-    h = 220
+# ---------------------------------------------------------------- shipped modules
+MODULES = [
+    ("CUE", "ios · swift", "Teleprompter that follows", "your voice as you read."),
+    ("HEARTHBOARD", "ipados · python", "iPad command center for", "a Raspberry Pi homelab."),
+    ("JARVIS", "agent · python", "Personal home agent that", "runs the house."),
+    ("CLUB PACK", "saas · founder", "Everything a social club", "needs, in one place."),
+    ("HAPPY MILE", "community · sf", "Viral free SF run club", "built on local partners."),
+    ("MOD BREW", "pop-up · founder", "Speakeasy campus coffee", "that sold out in a week."),
+]
+
+
+def modules():
+    cols, cw, ch, gap, top = 3, 368, 168, 24, 92
+    h = top + ch * 2 + gap + 40
+    x_off = (W - (cols * cw + (cols - 1) * gap)) / 2
+    cards = []
+    for i, (name, tag, l1, l2) in enumerate(MODULES):
+        x = x_off + (i % cols) * (cw + gap)
+        y = top + (i // cols) * (ch + gap)
+        d = (i * 0.37) % 2
+        cards.append(f'''
+  <g>
+    <rect x="{x}" y="{y}" width="{cw}" height="{ch}" rx="10" fill="{PANEL}" stroke="{FAINT}"/>
+    <path d="M{x+cw-36} {y}h36v0" stroke="{AMBER}"/>
+    <g fill="{FAINT}">{"".join(f'<rect x="{x+18+k*9}" y="{y+ch-12}" width="5" height="12"/>' for k in range(10))}</g>
+    <circle cx="{x+cw-24}" cy="{y+26}" r="5" fill="{GREEN}">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="{d:.2f}s" repeatCount="indefinite"/>
+    </circle>
+    <text x="{x+24}" y="{y+34}" font-size="12" fill="{FAINT}">MOD-0{i+1}  ·  {escape(tag)}</text>
+    <text x="{x+24}" y="{y+74}" font-size="26" font-weight="800" fill="{AMBER}" filter="url(#glow)">{escape(name)}</text>
+    <text x="{x+24}" y="{y+106}" font-size="15" fill="{DIM}">{escape(l1)}</text>
+    <text x="{x+24}" y="{y+128}" font-size="15" fill="{DIM}">{escape(l2)}</text>
+  </g>''')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}">
-  <rect x=".5" y=".5" width="{W-1}" height="{h-1}" rx="12" fill="{t["bg"]}" stroke="{t["line"]}"/>
-  <g opacity=".6">{grid(t, h, 40).replace('opacity=".55"', 'opacity=".35"')}</g>
-  <rect x=".5" y=".5" width="{W-1}" height="{h-1}" rx="12" fill="none" stroke="{t["line"]}"/>
-  <g text-anchor="middle" font-family="{FONT}">
-    <text x="600" y="100" font-size="40" font-weight="600" letter-spacing="-2" fill="{t["fg"]}">Building something?</text>
-    <text x="600" y="142" font-size="18" fill="{t["muted"]}">I'd love to hear about it. The fastest way to reach me is LinkedIn.</text>
-  </g>
+  {DEFS}
+  <style>text {{ font-family: {MONO}; white-space: pre; }}</style>
+  <rect width="{W}" height="{h}" rx="18" fill="{BG}"/>
+  <text x="{x_off}" y="56" font-size="18" fill="{GREEN}">william@sf <tspan fill="{DIM}">~</tspan> <tspan fill="{AMBER}">$ ls ~/shipped</tspan></text>
+  <text x="{W-x_off}" y="56" text-anchor="end" font-size="13" fill="{FAINT}">6 modules · all systems nominal</text>
+  {"".join(cards)}
+  {crt_overlay(h)}
 </svg>
 '''
 
 
-for name, t in THEMES.items():
-    (OUT / f"hero-{name}.svg").write_text(hero(t))
-    (OUT / f"features-{name}.svg").write_text(features(t))
-    (OUT / f"cta-{name}.svg").write_text(cta(t))
-    (OUT / f"btn-linkedin-{name}.svg").write_text(button(t, "Connect on LinkedIn", True, 200))
-    (OUT / f"btn-github-{name}.svg").write_text(button(t, "View GitHub", False, 140))
+# ---------------------------------------------------------------- sign-off strip
+def signoff():
+    h = 120
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}">
+  {DEFS}
+  <style>text {{ font-family: {MONO}; white-space: pre; }}</style>
+  <rect width="{W}" height="{h}" rx="18" fill="{BG}"/>
+  <g filter="url(#glow)" text-anchor="middle">
+    <text x="600" y="54" font-size="20" fill="{AMBER}">off-screen: running with Happy Mile, shooting photos, rebooting JARVIS.</text>
+    <text x="600" y="86" font-size="14" fill="{DIM}">systems-first · human-centered · built in san francisco</text>
+  </g>
+  {crt_overlay(h)}
+</svg>
+'''
 
+
+(OUT / "terminal.svg").write_text(hero())
+(OUT / "shipped.svg").write_text(modules())
+(OUT / "signoff.svg").write_text(signoff())
 print("built", sorted(p.name for p in OUT.glob("*.svg")))

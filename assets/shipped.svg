@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="492" viewBox="0 0 1200 492">
+  <defs>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigglow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity=".28"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".65"/>
+    </radialGradient>
+  </defs>
+  <style>text { font-family: 'JetBrains Mono', 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; white-space: pre; }</style>
+  <rect width="1200" height="492" rx="18" fill="#0E0B07"/>
+  <text x="24.0" y="56" font-size="18" fill="#7CFFB2">william@sf <tspan fill="#B9843A">~</tspan> <tspan fill="#FFB547">$ ls ~/shipped</tspan></text>
+  <text x="1176.0" y="56" text-anchor="end" font-size="13" fill="#5C4423">6 modules · all systems nominal</text>
+  
+  <g>
+    <rect x="24.0" y="92" width="368" height="168" rx="10" fill="#15110A" stroke="#5C4423"/>
+    <path d="M356.0 92h36v0" stroke="#FFB547"/>
+    <g fill="#5C4423"><rect x="42.0" y="248" width="5" height="12"/><rect x="51.0" y="248" width="5" height="12"/><rect x="60.0" y="248" width="5" height="12"/><rect x="69.0" y="248" width="5" height="12"/><rect x="78.0" y="248" width="5" height="12"/><rect x="87.0" y="248" width="5" height="12"/><rect x="96.0" y="248" width="5" height="12"/><rect x="105.0" y="248" width="5" height="12"/><rect x="114.0" y="248" width="5" height="12"/><rect x="123.0" y="248" width="5" height="12"/></g>
+    <circle cx="368.0" cy="118" r="5" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="0.00s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48.0" y="126" font-size="12" fill="#5C4423">MOD-01  ·  ios · swift</text>
+    <text x="48.0" y="166" font-size="26" font-weight="800" fill="#FFB547" filter="url(#glow)">CUE</text>
+    <text x="48.0" y="198" font-size="15" fill="#B9843A">Teleprompter that follows</text>
+    <text x="48.0" y="220" font-size="15" fill="#B9843A">your voice as you read.</text>
+  </g>
+  <g>
+    <rect x="416.0" y="92" width="368" height="168" rx="10" fill="#15110A" stroke="#5C4423"/>
+    <path d="M748.0 92h36v0" stroke="#FFB547"/>
+    <g fill="#5C4423"><rect x="434.0" y="248" width="5" height="12"/><rect x="443.0" y="248" width="5" height="12"/><rect x="452.0" y="248" width="5" height="12"/><rect x="461.0" y="248" width="5" height="12"/><rect x="470.0" y="248" width="5" height="12"/><rect x="479.0" y="248" width="5" height="12"/><rect x="488.0" y="248" width="5" height="12"/><rect x="497.0" y="248" width="5" height="12"/><rect x="506.0" y="248" width="5" height="12"/><rect x="515.0" y="248" width="5" height="12"/></g>
+    <circle cx="760.0" cy="118" r="5" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="0.37s" repeatCount="indefinite"/>
+    </circle>
+    <text x="440.0" y="126" font-size="12" fill="#5C4423">MOD-02  ·  ipados · python</text>
+    <text x="440.0" y="166" font-size="26" font-weight="800" fill="#FFB547" filter="url(#glow)">HEARTHBOARD</text>
+    <text x="440.0" y="198" font-size="15" fill="#B9843A">iPad command center for</text>
+    <text x="440.0" y="220" font-size="15" fill="#B9843A">a Raspberry Pi homelab.</text>
+  </g>
+  <g>
+    <rect x="808.0" y="92" width="368" height="168" rx="10" fill="#15110A" stroke="#5C4423"/>
+    <path d="M1140.0 92h36v0" stroke="#FFB547"/>
+    <g fill="#5C4423"><rect x="826.0" y="248" width="5" height="12"/><rect x="835.0" y="248" width="5" height="12"/><rect x="844.0" y="248" width="5" height="12"/><rect x="853.0" y="248" width="5" height="12"/><rect x="862.0" y="248" width="5" height="12"/><rect x="871.0" y="248" width="5" height="12"/><rect x="880.0" y="248" width="5" height="12"/><rect x="889.0" y="248" width="5" height="12"/><rect x="898.0" y="248" width="5" height="12"/><rect x="907.0" y="248" width="5" height="12"/></g>
+    <circle cx="1152.0" cy="118" r="5" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="0.74s" repeatCount="indefinite"/>
+    </circle>
+    <text x="832.0" y="126" font-size="12" fill="#5C4423">MOD-03  ·  agent · python</text>
+    <text x="832.0" y="166" font-size="26" font-weight="800" fill="#FFB547" filter="url(#glow)">JARVIS</text>
+    <text x="832.0" y="198" font-size="15" fill="#B9843A">Personal home agent that</text>
+    <text x="832.0" y="220" font-size="15" fill="#B9843A">runs the house.</text>
+  </g>
+  <g>
+    <rect x="24.0" y="284" width="368" height="168" rx="10" fill="#15110A" stroke="#5C4423"/>
+    <path d="M356.0 284h36v0" stroke="#FFB547"/>
+    <g fill="#5C4423"><rect x="42.0" y="440" width="5" height="12"/><rect x="51.0" y="440" width="5" height="12"/><rect x="60.0" y="440" width="5" height="12"/><rect x="69.0" y="440" width="5" height="12"/><rect x="78.0" y="440" width="5" height="12"/><rect x="87.0" y="440" width="5" height="12"/><rect x="96.0" y="440" width="5" height="12"/><rect x="105.0" y="440" width="5" height="12"/><rect x="114.0" y="440" width="5" height="12"/><rect x="123.0" y="440" width="5" height="12"/></g>
+    <circle cx="368.0" cy="310" r="5" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="1.11s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48.0" y="318" font-size="12" fill="#5C4423">MOD-04  ·  saas · founder</text>
+    <text x="48.0" y="358" font-size="26" font-weight="800" fill="#FFB547" filter="url(#glow)">CLUB PACK</text>
+    <text x="48.0" y="390" font-size="15" fill="#B9843A">Everything a social club</text>
+    <text x="48.0" y="412" font-size="15" fill="#B9843A">needs, in one place.</text>
+  </g>
+  <g>
+    <rect x="416.0" y="284" width="368" height="168" rx="10" fill="#15110A" stroke="#5C4423"/>
+    <path d="M748.0 284h36v0" stroke="#FFB547"/>
+    <g fill="#5C4423"><rect x="434.0" y="440" width="5" height="12"/><rect x="443.0" y="440" width="5" height="12"/><rect x="452.0" y="440" width="5" height="12"/><rect x="461.0" y="440" width="5" height="12"/><rect x="470.0" y="440" width="5" height="12"/><rect x="479.0" y="440" width="5" height="12"/><rect x="488.0" y="440" width="5" height="12"/><rect x="497.0" y="440" width="5" height="12"/><rect x="506.0" y="440" width="5" height="12"/><rect x="515.0" y="440" width="5" height="12"/></g>
+    <circle cx="760.0" cy="310" r="5" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="1.48s" repeatCount="indefinite"/>
+    </circle>
+    <text x="440.0" y="318" font-size="12" fill="#5C4423">MOD-05  ·  community · sf</text>
+    <text x="440.0" y="358" font-size="26" font-weight="800" fill="#FFB547" filter="url(#glow)">HAPPY MILE</text>
+    <text x="440.0" y="390" font-size="15" fill="#B9843A">Viral free SF run club</text>
+    <text x="440.0" y="412" font-size="15" fill="#B9843A">built on local partners.</text>
+  </g>
+  <g>
+    <rect x="808.0" y="284" width="368" height="168" rx="10" fill="#15110A" stroke="#5C4423"/>
+    <path d="M1140.0 284h36v0" stroke="#FFB547"/>
+    <g fill="#5C4423"><rect x="826.0" y="440" width="5" height="12"/><rect x="835.0" y="440" width="5" height="12"/><rect x="844.0" y="440" width="5" height="12"/><rect x="853.0" y="440" width="5" height="12"/><rect x="862.0" y="440" width="5" height="12"/><rect x="871.0" y="440" width="5" height="12"/><rect x="880.0" y="440" width="5" height="12"/><rect x="889.0" y="440" width="5" height="12"/><rect x="898.0" y="440" width="5" height="12"/><rect x="907.0" y="440" width="5" height="12"/></g>
+    <circle cx="1152.0" cy="310" r="5" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" begin="1.85s" repeatCount="indefinite"/>
+    </circle>
+    <text x="832.0" y="318" font-size="12" fill="#5C4423">MOD-06  ·  pop-up · founder</text>
+    <text x="832.0" y="358" font-size="26" font-weight="800" fill="#FFB547" filter="url(#glow)">MOD BREW</text>
+    <text x="832.0" y="390" font-size="15" fill="#B9843A">Speakeasy campus coffee</text>
+    <text x="832.0" y="412" font-size="15" fill="#B9843A">that sold out in a week.</text>
+  </g>
+  <rect width="1200" height="492" fill="url(#scan)" pointer-events="none"/>
+  <rect width="1200" height="492" fill="url(#vignette)" pointer-events="none"/>
+  <rect y="-80" width="1200" height="80" fill="#FFB547" opacity=".035">
+    <animate attributeName="y" values="-80;492" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>
