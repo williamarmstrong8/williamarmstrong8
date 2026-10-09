@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs><linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0036B3"/><stop offset="100%" stop-color="#2894C0"/>
+    </linearGradient></defs>
+  <rect x=".5" y=".5" width="1199" height="419" fill="#F8FAFA" stroke="#EDF0F1"/>
+
+  <!-- pill -->
+  <rect x="72.5" y="72.5" width="196" height="33" rx="16.5" fill="none" stroke="#EDF0F1"/>
+  <circle cx="94" cy="89" r="4" fill="#0036B3">
+    <animate attributeName="opacity" values="1;.3;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="108" y="94" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#737373">Engineer &amp; Entrepreneur</text>
+
+  <text x="68" y="222" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="96" font-weight="700" letter-spacing="-4" fill="#000000">William Armstrong</text>
+
+  <!-- gradient rule that draws in and rests -->
+  <rect x="72" y="256" width="0" height="3" fill="url(#g)">
+    <animate attributeName="width" values="0;120;120" keyTimes="0;.25;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="72" y="310" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#737373">Launched 4 startups  •  automated a $50k workflow  •  2M+ community engagement</text>
+  <text x="72" y="350" font-family="Merriweather, Georgia, 'Times New Roman', serif" font-style="italic" font-size="17" fill="#000000">Solutions Engineer at Vercel. Human-centered, systems-first. San Francisco.</text>
+</svg>

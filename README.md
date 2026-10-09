@@ -1,29 +1,10 @@
-<div align="center">
+<img src="./assets/hero.svg" width="100%" alt="William Armstrong — Engineer & Entrepreneur. Launched 4 startups, automated a $50k workflow, 2M+ community engagement." />
 
-<img src="./assets/terminal.svg" width="100%" alt="ARMSTRONG-OS terminal: William Armstrong, solutions engineer at Vercel and founder in San Francisco, booting his agent fleet JARVIS, ALFRED, TARS and HEARTHBOARD" />
+<img src="./assets/work.svg" width="100%" alt="Selected work: Club Pack, Happy Mile Run Club, Mod Brew, Cue, Hearthboard, JARVIS" />
 
-<br/>
-
-<img src="./assets/shipped.svg" width="100%" alt="Shipped: Cue, Hearthboard, JARVIS, Club Pack, Happy Mile Run Club, Mod Brew" />
-
-<sub>
-<a href="https://github.com/williamarmstrong8/cue">cue</a> ·
-<a href="https://github.com/williamarmstrong8/hearthboard">hearthboard</a> ·
-<a href="https://github.com/williamarmstrong8/jarvis-personal-home-agent">jarvis</a> ·
-<a href="https://williamarmstrong.vercel.app/startups/club-pack">club pack</a> ·
-<a href="https://williamarmstrong.vercel.app/startups/happy-mile">happy mile</a> ·
-<a href="https://williamarmstrong.vercel.app/startups/mod-brew">mod brew</a>
-</sub>
-
-<br/><br/>
-
-<img src="./assets/signoff.svg" width="100%" alt="Off-screen: running with Happy Mile, shooting photos, rebooting JARVIS." />
-
-<br/>
-
-<code><a href="https://williamarmstrong.vercel.app/">portfolio</a></code>&nbsp;
-<code><a href="https://www.linkedin.com/in/william-armstrong8/">linkedin</a></code>&nbsp;
-<code><a href="https://x.com/armstrongwill8">x</a></code>&nbsp;
-<code><a href="https://williamarmstrong.vercel.app/photography">photography</a></code>
-
-</div>
+<p align="center">
+<a href="https://williamarmstrong.vercel.app/">Portfolio</a> &nbsp;·&nbsp;
+<a href="https://williamarmstrong.vercel.app/startups">Startups</a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/william-armstrong8/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="https://x.com/armstrongwill8">X</a>
+</p>

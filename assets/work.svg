@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="552" viewBox="0 0 1200 552">
+  <rect x=".5" y=".5" width="1199" height="551" fill="#F8FAFA" stroke="#EDF0F1"/>
+  <text x="72" y="84" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="-1" fill="#000000">Selected work</text>
+  <text x="1128" y="84" text-anchor="end" font-family="Merriweather, Georgia, 'Times New Roman', serif" font-style="italic" font-size="15" fill="#737373">Signal to solution.</text>
+  
+  <path d="M72 120.5H1128" stroke="#EDF0F1"/>
+  <text x="72" y="160" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#737373">01</text>
+  <text x="120" y="160" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#000000">Club Pack</text>
+  <text x="400" y="160" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#737373">One place to run a social club: events, RSVPs, sites, analytics.</text>
+  <text x="1128" y="160" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#0036B3">Startup</text>
+  <path d="M72 184.5H1128" stroke="#EDF0F1"/>
+  <text x="72" y="224" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#737373">02</text>
+  <text x="120" y="224" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#000000">Happy Mile Run Club</text>
+  <text x="400" y="224" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#737373">A free, social San Francisco run club grown with local partners.</text>
+  <text x="1128" y="224" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#0036B3">Startup</text>
+  <path d="M72 248.5H1128" stroke="#EDF0F1"/>
+  <text x="72" y="288" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#737373">03</text>
+  <text x="120" y="288" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#000000">Mod Brew</text>
+  <text x="400" y="288" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#737373">A speakeasy-style campus coffee pop-up.</text>
+  <text x="1128" y="288" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#0036B3">Startup</text>
+  <path d="M72 312.5H1128" stroke="#EDF0F1"/>
+  <text x="72" y="352" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#737373">04</text>
+  <text x="120" y="352" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#000000">Cue</text>
+  <text x="400" y="352" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#737373">A teleprompter that follows your voice and records to camera roll.</text>
+  <text x="1128" y="352" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#0036B3">iOS</text>
+  <path d="M72 376.5H1128" stroke="#EDF0F1"/>
+  <text x="72" y="416" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#737373">05</text>
+  <text x="120" y="416" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#000000">Hearthboard</text>
+  <text x="400" y="416" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#737373">A native iPad command center for a Raspberry Pi homelab.</text>
+  <text x="1128" y="416" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#0036B3">iPad + Pi</text>
+  <path d="M72 440.5H1128" stroke="#EDF0F1"/>
+  <text x="72" y="480" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#737373">06</text>
+  <text x="120" y="480" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#000000">JARVIS</text>
+  <text x="400" y="480" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#737373">A personal home agent.</text>
+  <text x="1128" y="480" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#0036B3">Agent</text>
+  <path d="M72 504.5H1128" stroke="#EDF0F1"/>
+</svg>
