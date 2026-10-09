@@ -14,6 +14,18 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝
 ```
 
+<p align="center"><sub><code>a story in chapters</code> &nbsp;·&nbsp; press play by scrolling</sub></p>
+
+<br/>
+
+<a href="https://www.happymilerc.com/"><img src="./assets/ch01-happy-mile.svg" width="100%" alt="Chapter 01, Happy Mile Run Club: most run clubs cost money, so we started one anyone could join. Free every Sunday, leaders aged 18 to 22, a relaxed atmosphere. Enjoy every step." /></a>
+
+<p align="center"><sub><b>CH.01</b> &nbsp;Happy Mile Run Club &nbsp;·&nbsp; <a href="https://www.happymilerc.com/">happymilerc.com</a> &nbsp;·&nbsp; <i>next: Club Pack →</i></sub></p>
+
+<br/>
+
+<p align="center"><sub><code>credits</code></sub></p>
+
 ```
 ┌─ whoami ────────────────────────────────────────────────────────────────────┐
 │                                                                             │
