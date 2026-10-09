@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="541" viewBox="0 0 1200 541">
+  <style>
+  </style>
+  <rect width="1200" height="541" fill="#000000"/>
+  <text x="0" y="56" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="600" letter-spacing="-2" fill="#EDEDED">A unified approach for 0 → shipped</text>
+  <text x="0" y="96" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#A1A1A1">One person across the whole loop, so nothing gets lost in handoff.</text>
+  <g fill="none" stroke="#2E2E2E">
+    <rect x=".5" y="140.5" width="1199" height="400"/>
+    <path d="M400 140V541M800 140V541M0 340.5H1200"/>
+  </g>
+  <rect x="0" y="140" width="120" height="1.5" fill="#EDEDED" opacity=".8">
+    <animate attributeName="x" values="-120;1200" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <g class="cell" style="animation-delay:0.10s">
+    <text x="32" y="188" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">01</text>
+    <text x="32" y="232" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-.6" fill="#EDEDED">Idea</text>
+    <text x="32" y="264" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#EDEDED">Start with the problem.</text>
+    <text x="32" y="290" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">Find the sharpest version</text>
+    <text x="32" y="312" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">worth building.</text>
+  </g>
+  <g class="cell" style="animation-delay:0.22s">
+    <text x="432" y="188" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">02</text>
+    <text x="432" y="232" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-.6" fill="#EDEDED">Design</text>
+    <text x="432" y="264" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#EDEDED">Interfaces that feel obvious.</text>
+    <text x="432" y="290" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">Clear hierarchy, nothing</text>
+    <text x="432" y="312" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">extra.</text>
+  </g>
+  <g class="cell" style="animation-delay:0.34s">
+    <text x="832" y="188" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">03</text>
+    <text x="832" y="232" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-.6" fill="#EDEDED">Build</text>
+    <text x="832" y="264" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#EDEDED">Full stack, end to end.</text>
+    <text x="832" y="290" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">Frontend, backend, data,</text>
+    <text x="832" y="312" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">and everything between.</text>
+  </g>
+  <g class="cell" style="animation-delay:0.46s">
+    <text x="32" y="388" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">04</text>
+    <text x="32" y="432" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-.6" fill="#EDEDED">AI</text>
+    <text x="32" y="464" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#EDEDED">Products with intelligence.</text>
+    <text x="32" y="490" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">Models and agents wired into</text>
+    <text x="32" y="512" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">real workflows.</text>
+  </g>
+  <g class="cell" style="animation-delay:0.58s">
+    <text x="432" y="388" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">05</text>
+    <text x="432" y="432" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-.6" fill="#EDEDED">Ship</text>
+    <text x="432" y="464" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#EDEDED">Zero to production, fast.</text>
+    <text x="432" y="490" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">Small releases, short loops,</text>
+    <text x="432" y="512" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">real users early.</text>
+  </g>
+  <g class="cell" style="animation-delay:0.70s">
+    <text x="832" y="388" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">06</text>
+    <text x="832" y="432" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-.6" fill="#EDEDED">Scale</text>
+    <text x="832" y="464" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#EDEDED">Grow without rewrites.</text>
+    <text x="832" y="490" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">Foundations that hold up</text>
+    <text x="832" y="512" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1A1">from MVP onward.</text>
+  </g>
+</svg>

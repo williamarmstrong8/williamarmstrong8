@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480">
+  <defs>
+    <radialGradient id="fade" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" x2="1">
+      <stop offset="0%" stop-color="#EDEDED" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#EDEDED" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#EDEDED" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vbeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEDED" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#EDEDED" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#EDEDED" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+    </style>
+  </defs>
+  <rect width="1200" height="480" fill="#000000"/>
+  <g stroke="#2E2E2E" stroke-width="1" opacity=".55"><path d="M0 0V480" /><path d="M60 0V480" /><path d="M120 0V480" /><path d="M180 0V480" /><path d="M240 0V480" /><path d="M300 0V480" /><path d="M360 0V480" /><path d="M420 0V480" /><path d="M480 0V480" /><path d="M540 0V480" /><path d="M600 0V480" /><path d="M660 0V480" /><path d="M720 0V480" /><path d="M780 0V480" /><path d="M840 0V480" /><path d="M900 0V480" /><path d="M960 0V480" /><path d="M1020 0V480" /><path d="M1080 0V480" /><path d="M1140 0V480" /><path d="M1200 0V480" /><path d="M0 0H1200" /><path d="M0 60H1200" /><path d="M0 120H1200" /><path d="M0 180H1200" /><path d="M0 240H1200" /><path d="M0 300H1200" /><path d="M0 360H1200" /><path d="M0 420H1200" /><path d="M0 480H1200" /></g>
+  <rect width="1200" height="480" fill="url(#fade)"/>
+
+  <!-- light travelling along the grid -->
+  <rect y="119.5" width="180" height="1.5" fill="url(#beam)">
+    <animate attributeName="x" values="-180;1200" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <rect y="359.5" width="180" height="1.5" fill="url(#beam)">
+    <animate attributeName="x" values="1200;-180" dur="7s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="179.5" width="1.5" height="140" fill="url(#vbeam)">
+    <animate attributeName="y" values="-140;480" dur="5s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1019.5" width="1.5" height="140" fill="url(#vbeam)">
+    <animate attributeName="y" values="480;-140" dur="5.5s" begin="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- grid-intersection crosses -->
+  <g stroke="#A1A1A1" stroke-width="1">
+    <path d="M174 120h12M180 114v12"/><path d="M1014 360h12M1020 354v12"/>
+  </g>
+
+  <g text-anchor="middle">
+    <g class="in d1">
+      <rect x="490" y="104" width="220" height="32" rx="16" fill="#000000" stroke="#2E2E2E"/>
+      <circle cx="514" cy="120" r="4" fill="#45DEC4"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
+      <text x="610" y="125" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A1A1A1">williamarmstrong8</text>
+    </g>
+    <g class="in d2" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="600" fill="#EDEDED" letter-spacing="-3.2">
+      <text x="600" y="222" font-size="68">Build the idea.</text>
+      <text x="600" y="300" font-size="68">Ship the product.</text>
+    </g>
+    <g class="in d3" font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#A1A1A1">
+      <text x="600" y="358">William Armstrong — builder and engineer, from idea to shipped.</text>
+    </g>
+  </g>
+</svg>
