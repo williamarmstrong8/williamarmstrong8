@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait-dark.svg">
-    <img src="./assets/portrait-light.svg" width="560" alt="ASCII portrait of William Armstrong">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/williamarmstrong8/williamarmstrong8/main/assets/portrait-dark.svg">
+    <img src="https://raw.githubusercontent.com/williamarmstrong8/williamarmstrong8/main/assets/portrait-light.svg" width="560" alt="ASCII portrait of William Armstrong">
   </picture>
 </p>
 
