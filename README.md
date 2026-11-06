@@ -1,52 +1,83 @@
 ```text
-                                  .lf{oZ&g08%v'
-                               /&BNNNBBB8XIZgWNNN0f'
-                   ':voU&XX{--&BNNNNNW8gU##&gg0MBNNMw_
-               '?a&0MBNNNNNNNNNNNNNNNBBW0#X%U&&8&aw&WNa'
-             "Z0M#&8BNNBBBBBBM&&80MW880MW##gXwff{{{aX#80gw.
-           'a&#8gX&MB#UgMMBWMU{+fI&#80BW8&U%w{f]fa%g8MBW0BBgw?+'
-          oUg8XUaUg&Zw%g000W8Ua;.f&8MBWM088#&%w]fwZg8WWM0MNMNNNM_'
-         XUg8g&ZaZa%Ug##g0MM0W0l']UMBBBBWg&UUao]vfw%8MWW8080NN@@Na
-        wg808#8UU&U&U&gg&0BMBBW&"+8BWBW0WB0gUUX%wa%U&%g#88&#MWB@BNw
-       :8WW88g&UXwa%%XX&g88MWNN#wX0NWBB88#WMUXaoI{oXU#8gg#MWWNN@N@@W~
-       ]WBBBW#UXa%XIX#U#&#8g#MWg%g0#WWWB0UUgg&a{oZaZ%&g8##8#0BNNN@@@&
-       XBNBM8g&&U&U%%aZ%Ug%{wg0&Ua8#8gg88&aw{{{aIXggM800WW0#UgW0BN@NBa
-      -BNNNB008000#%%wXXXXf?w&#UZIXgXgUZU%Zwfl?{%&U80BBBNNBMWM0WN@N&#N]
-     ~W@NNNWWBM0#08g&aaawI]{Zw%ooIwwwao%waa{wv+lf&%U0NBBW0BN00###UX%W@M'
-    vBN@NNBB#88#00g&%%X%awIZawwf?ofIwffowo{{IaollZg##00&g8g%%%&aZZ&0N@N'
-   '8@@NMWBW8gg&#ggg###UZaaaaX{{]]{f{{{oIwa{foZUg8800808%aZI{Xg#8IaN@N@-
-   '0@@NNBBBBWBBWW8&#g&%%ZwoZa{]?+vfvl{{]f{{ZaX%%&g00&v";vf]{ll8NBZ#@@B/
-   '0@@@@NM8MBMBWW00gg&U%%Zov??;.;?.-~?+?+/"?a&8MM0&aoIaZ%&f-''+#NNB@@@8'
-    +B@@@NNBMMMWBNNNB00Xw{vvvl;:_/:' '''':{#8888gav"~_--_:/al-';Z8@W@N@a]l''
-     &@@@@N@N@N@@@@@@@MXZaaUg#8888a]-'''''vXawaI{v]fwaa{+-'_~~-/%0M8BNI.-w?f.
-     a@@@N@@N@N@@NN@NMgMN08&&#0MW00#a?~.''_/llfIv_+##Ua%w/:''-~~ZWW#%?  'wN#'
-     w@@@@@NBBN@NNWg0WMXol;+loXZ&8&UU%w"''~/"?v??~__'-_:-..--_"/l0B#'   '8B%
-     ;@@@NNB#UMWN8X&WMZv?{aU%l8&M&+woaU{"_~++/~";;"~~~:--.''-:~;lIB8    ?BNMa'
-     'N@@@NN0g#0NM&UX{vv{#8Zv?l?-~~~fw%I?""/??/~:--_:~::-.._~;""?{gZ   '%NN@B~
-      %@@@@@NM88M@8Uf"~+fv]v]l??/;"?{aZol;";+lv?~_._:::-..-_~~""+ff-'' '0@NW;
-       g@@@@@@BNMBBZv;/?+/""""""";/?owawl"~~/lvv+~____.''._-:~";+f~'   -B#&'
-        .%N@N@@@@@NIl+???/;~:~~~:~;?{aZ{?"_-_"+vl?;;;":--__:~";/?]:   'w8ZI
-          U@@@@@@@Nollvv]l?;~:_::~/laoof?;-''-;?+l;;/fo{/""";/+/+l+?~?g@@N&'
-           oB@@@@N@U{{ffvll?+"~;;/vwgaZ%UZf?+fZXav/;;/?oZo?;/?l+/+]W@@NBMW&
-            '#NN@@NBXawo{f]vl?+/l{fo&gg0WBM&ao{{f?//+//?lo];/l?/;+?fN@@@N0+
-              {8B&M@8XXawI{f]]]f{{ooooowaZaw{v+;;/+v{aa]/;""+v?/+??~g@@B%~
-               'wg8NN&%%%Xao{{{{{wwI{]]v]v??//lfvl;;;{%++:~"lv+/lv?"{X{'
-                 {N@NW&&UUUZw{ff{a&##&Xaooof?;-''/"o]{/";~"/vl+lvf/+v
-                  ZBN#g8gg#&%If]?{Xg%If]f]vv]]l?oowo]+//;;/lv?l]fl;l{;
-                    '';XB08#&%I]?l{oIwaawov+//+++v]?/+?+;;+]vv]{f;/vfIa-''
-                        ]BB0#gUa{]{owwwawo{]vvv]]l++++/+;;?]]]fo/;/?]o&{8%''''
-                         '&BB0#&XI{IwwwwIooIII{{]+/?///?/?]{{o{;;;;+lf%oU-''''-__.'
-                           'UNW#&%awwwIo{{ffff]l?//++//+lf{Iwv;;;;;+lfXI~'''''-....-_''
-                             %BM8&XwIo{{ff]]v?+/+;;//lv]{oaI?;;;?;;+l{Zl''''''''''..---_-'
-                              8MW8g%aIooo{o{]]?v]vvvff{Iaao]+//;;/+?vwv''''.--'''''-...--_::.''
-                              vMBBW0g&%%X%%XwoowIIwaa%%w{fvlll?+++lv]{'''_"~'.'''''''''.-...--_:-'
-                            'lX&80MBBM&&g#88#g&&8000&ao{f]]vvv?lllv]]'''.:+:~.''--''..''--'.'--.----
-                         '"]X8#U%%#0WMgZU0BNNBBBWgZo{ffff]]]]v]]v]fv'''.-~:'/.'-:-::_-.--.''-..'.-..
-                      :]oow&0#&%fwXg80#%a%808&%w{v]vf{{fffff{{{ff{"'''.~~~'~?-.-:~;~-_-..'....'..'''
-                   '{gZ{fI###&%w]08X&#8gXaawoff]vv]{{{{{{{{{{ooo?.'''-:":'-+"_~~;;":.'--'-:_..'.''''
-                 :{{]f]+/+I&g&Z;XW@W%XZZXX%XaoflvfowIwwIIoIIwwf:''._:~"_'."+::;+/"_-..:~~~---.''....
-              '/oo{f]l++;;";]Zv~f&@@BU%XX%UggUZoIaZXXXaaaaZZ]:''--:;"~--'_//;??~_-._:~;;~:~---'.----
-            _{wwof]]v+?l?/;"/w_l{{B@N8g&%XUg#808gggg&U%%Ua?'''-:~;+;~~..-"+??;~:--_~;;~--__~~--_:__-
+                                    ''':;?voUUgUg#0M0af:-'
+                                 -lZUUU&MM8#888g&#M0NN00WB8#gZ-
+                              'og8###08B8888WM8&&&Za%&MNN&XUM@N8o
+                           '?aU&&#MNNNNNNM8BBB0g%wwaZaXX&ggZfZ8W@N{
+                         l8B8###8M0MNN@NNWNNNW0MW0888g#0&&08w{&%&N@Wl
+                        XNNWg%XX&#800BNMWN@@@NNBBWWWBBBBBNNWUa%g&XNNNU'
+                        XNN0#880BM88M8#g#&gMB08#00WWBN@@@@@@W00NM8BNWWW;
+                       ?NB08BN@@NBB0gXawo{o{ZooZaZ#8U0N@00N@@@NBNBNNNNW0:
+                      -N@@@N@@@@NM&w{?{l?//+]v+l?ll{]fa]_'_"l&NNBW0BN@@WW:
+                      ?@@@@@@@NMgZv/;+???+/???+l+//++;:-''''  "oo%&gWN@@@X
+                      l@@@@@@@g{?;;/+]]ll?+/;"~~~":_-.''.---'''-lU8#8NN@@0
+                      a@@@@@@8];;/;;/?":..''.''''''    ''''''''.;&NNN@N@@@'
+                      I@@@@@MI+/~"~-''' ''  '''':lo&00WWWBW0UIl-'{M@@N@@@@~
+                      a@@@@N&v~~"+v{X&#800U]""~?gN@@NNBM#UX%U#g%"'/8N@@@@@%
+                      /@@@@@g+"wB@NW0WN@@@@N%f/lZ#WN@NW&ZUgU&Z{f;''{B@@@@@&
+                       g@@@@U;%8UaoZooUMN@@@0:  ?&M@@WgBM088gwl~.''/B@@Bw"II
+                        N@@@Z+Xaa%80B@NN#0NWU:  .vI%UUgZaww{+-'''''"M@Bf]%@U~
+                        %@@@U//;]Z#UZawoaZowf?' ';/+;;+?;:.'''':/~'_I@I?/+Ba'
+                       ~gB@@M;"_.-:+]ff]/~/]f?' '~/?/_.'''.''._:~~_:/Zogo;gU
+                       0@W0NN?//":''''''_"vfv~'  '.~~~/;~:__-:__~";?v?-{Z+g
+                       ]NMw&@f++/:-'''-~+l?;/~-..:"~'~w&0gafl++++?]fff/:+va
+                        %WaUBwv+"~:~;+vowIoX##UUZ&MW8Il]w8NW%wo{{f{f{]l+~?:
+                         8gIgXo]l?v{Z8Bgolf%0B@NB088a?:_;fX8W#XIawfvfXg8&v
+                          U%{]%awwZ&WWUo+";?{%g8#&af+;+{I%#&{ffowao{I&
+                           Io{%X&gUUgg8&ZwwaZZX%g&%&Z%{wB8Xw??fwwIIwag
+                            ';Z#g8golfXgMN8Zf~/._--~;f]]+~?]lfIIowwZa#
+                               :8#g%{/vflvfff//+";++vv/~"/?+loaIIaXUf8
+                                fN0&&wv/?+lfowaaaZU%I]?++/;+vowIaggfvg
+                                 &NW#%ovlvvf{{aXUXawvl/~:::/v{owU8f/l%
+                                  &NBgZ]/;;""""/;/;~.''''':v{oX##ol?vX-
+                                  'gBN0&o/"::::-'~;".'-+?]oZU0W#a{f]f?/v
+                                   U80BNB8&aoIwof{owaX&&&8BBW8&wooffv/ ]N_
+                                   vgUU0BNBBMMMW08#80BBB08gggXwo{{wo]'  XNo
+                                   .X&UU&gg#0BBN@@NN@BMg%wo{ooII{Iav'   '@N8o.
+                                  o'l&UXXXZ%XX%#M000M#Uwo{oIowwwZ].      #N8&gUv'
+                                /NN 'laXZZaaaaaXXXXXZaIo{IaaZ%Zl.        gB#&%%&UUof:'
+                             _%W@@#   '/Z%ZZaaXX%%U%aIwwwwZUZ+'          0NgUawXX%%%#g&a];'
+                         -{Z8MMB@@&    ''"{UXwaaX%U&gU%XU#X/'      '    'NN&XawwwZZXa%&UU%%Xao+'
+                     ';w&8#gg0MBN@I     '' .{UZwaaZXXUg#w~       '''    _@Ng&ZwwIwIaaooaU%UU%&%ZZw{-
+                '~fI%gggggg&g808B@o  '''     '+IXZX%U&{.     ''''''''   o@B&U%Zawooowag8%ZZZXZXXZXXa
+             -wggg&&g8gUXZXU&g#0N@{ '.-.''     .{;;]]'       '''''''   :B@MgU%%%U%%%g0%XaaaaaXX%XZZa
+         -]aU&g#g&gU%&Wg%U%U&g80@W;  '_:.'   +U#oIw&WBUl'     '''''   '/0@0&%%XX%XXX%aXZaaZ%XZXZXZwa
+    :oa%&g#g&&&UU&%%X%X&UU%&g#8W@U-   '''' 'aXUa{]]owlvvf]"           :'@N8&%%%XZZXXZ%%XZaaaUX%XXXZa
+o%%&U&&&gg&&&&X%U%%U%UU%UU%&g#8BN;'      'f0&wfll?+vv?/;/lIXf'       '':@B#&%XXXX%%Za%%U%ZZ#&ZXXXXXX
+%%UUU%X%%%%%UU%&&UU%U%U%U&%gg80N0'     'fMNN0a]?+////+;;?/]%BW{'    -' ?@B#&U%XXX%#80g&&XZ%8%XX%X%%%
+%%%%%%%XX%%%%%UU&U%%%%UUUUUg#80@%    :ogXI{{XUovfl/;;/;/ag80M@NB{' '~  {@BgU%X%%%XXXZ&&%%%&&XU%X%%UU
+%%UUXX%X%%%U%U%U&UXXX%UXU&U&#0W@{  ']Xv:.''.+a%o{?+~~::;{&888%fv]f~_'  %@WgUUX%%%XXXXXXXX%8XXXXU&%%&
+&&%UU%%%%U%%U%%&&%%U%%UU%&&g#0B@v  ''''''-__--;X{]?;~;vfU#&a+.'' '''   #@MgU%%%UUU%%Z%%U&g&Z%U%%&U&g
+g&gUU%%%U%U&U%%&&U%UU%%UU&gg#0B@l    '''-.''  'Zgo++v{aU&gw_           NN8g%X%XXUU%%X%X%U8XX%%%%&U&&
+###g&UUUU&&&UU&&UUU%&&&%U&g#80NB'    ''-.'    oNW%v;~:~+/+l''         '@N0g%%UU%&%XXX%U&ggUUUU&g&&gg
 ```
 
-[Portfolio](https://williamarmstrong.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/william-armstrong8/) &nbsp;·&nbsp; [X](https://x.com/armstrongwill8)
+## William Armstrong
+
+Solutions Engineer at Vercel &nbsp;·&nbsp; San Francisco
+
+I help teams turn business problems into systems that hold up — connecting product, engineering, and the people who depend on both.
+
+<br/>
+
+### Approach
+
+- **Start from the outcome.** Understand what the business needs to be true before choosing tools.
+- **Design the whole flow.** Map intake, data, integrations, and hand-offs end to end, not just the part that's easy to demo.
+- **Make complexity legible.** Explain trade-offs in plain language so engineers and stakeholders decide together.
+- **Ship, then refine.** Get a working path in front of real users early and improve it with evidence.
+
+<br/>
+
+### Toolkit
+
+<sub>Next.js &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Supabase &nbsp;·&nbsp; n8n &nbsp;·&nbsp; AI SDK &nbsp;·&nbsp; Swift &nbsp;·&nbsp; Python</sub>
+
+<br/>
+
+### Elsewhere
+
+[Portfolio](https://williamarmstrong.vercel.app/) &nbsp;·&nbsp;
+[Writing](https://williamarmstrong.vercel.app/blog) &nbsp;·&nbsp;
+[Photography](https://williamarmstrong.vercel.app/photography) &nbsp;·&nbsp;
+[LinkedIn](https://www.linkedin.com/in/william-armstrong8/) &nbsp;·&nbsp;
+[X](https://x.com/armstrongwill8)
