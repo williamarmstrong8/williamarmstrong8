@@ -6,7 +6,7 @@
   <a href="https://www.joinclubpack.com/"><img src="assets/clubpack-icon.png" width="112" alt="Club Pack"></a>
   <a href="https://destinationdrifters.com/"><img src="assets/drifters.png" width="112" alt="Destination Drifters"></a>
   <a href="https://happymilerc.com/"><img src="assets/happymile.png" width="112" alt="Happy Mile Run Club"></a>
-  <a href="https://williamarmstrong.vercel.app/startups/mod-brew"><img src="assets/modbrew-logo.png" width="112" alt="Mod Brew"></a>
+  <a href="https://modbrew.vercel.app/gallery"><img src="assets/modbrew-logo.png" width="112" alt="Mod Brew"></a>
 </p>
 
 <p align="center">
